@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>no-lag-scroll - jQuery plugin for a no lag 60 fps scrolling using "pointer-events: none" technique</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="jquery.no-lag-scroll.js"></script>
+<style>
+* { box-sizing: border-box; }
+
+html,
+body {
+    height: 100%;
+}
+
+#without,
+#with {
+    float: left;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    width: 50%;
+}
+
+img {
+    display: inline-block;
+    margin: 20px 0;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .1s linear;
+    transition: transform .1s linear;
+}
+
+img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+</style>
+<script>
+jQuery(function ($) {
+    //$("#without").noLagScroll({freezeEl: $("#without > .scrolling-wrapper"), timeout: 3000});
+    $("#with").noLagScroll({freezeEl: $("#with > .scrolling-wrapper")});
+});
+</script>
+
+</head>
+<body>
+
+<div id="without">
+    <div class="scrolling-wrapper">
+        <h2>Without</h2>
+        <img src="http://lorempixel.com/500/500/?1">
+        <img src="http://lorempixel.com/500/500/?2">
+        <img src="http://lorempixel.com/500/500/?3">
+        <img src="http://lorempixel.com/500/500/?4">
+        <img src="http://lorempixel.com/500/500/?5">
+    </div>
+</div>
+
+<div id="with">
+    <div class="scrolling-wrapper">
+        <h2>With</h2>
+        <img src="http://lorempixel.com/500/500/?6">
+        <img src="http://lorempixel.com/500/500/?7">
+        <img src="http://lorempixel.com/500/500/?8">
+        <img src="http://lorempixel.com/500/500/?9">
+        <img src="http://lorempixel.com/500/500/?10">
+    </div>
+</div>
+
+</body>
+</html>
+

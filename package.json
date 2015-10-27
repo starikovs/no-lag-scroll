@@ -1,0 +1,23 @@
+{
+  "name": "no-lag-scroll",
+  "version": "0.0.1",
+  "description": "jQuery plugin for a no lag 60 fps scrolling using \"pointer-events: none\" technique.",
+  "homepage": "https://github.com/starikovs/no-lag-scroll/",
+  "main": "./jquery.no-lag-scroll.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starikovs/no-lag-scroll.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "scroll",
+    "scrolling"
+  ],
+  "author": "Vacheslav Starikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starikovs/no-lag-scroll/issues"
+  }
+}
+

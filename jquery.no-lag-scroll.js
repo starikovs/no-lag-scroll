@@ -1,3 +1,14 @@
+/**
+ * Example of use:
+ *
+ * 1. $(window).noLagScroll({timeout: 1000}); // default timeout is 500ms
+ *
+ * 2. $(".el-with-scroll").noLagScroll({freezeEl: $(".content-el")}); // default freezeEl is body
+ *    <div class="el-with-scroll">
+ *      <div class="content-el">
+ *        <!-- Here is all the content that is scrolled. -->
+ *
+ */
 (function ($) {
     $.fn.noLagScroll = function (options) {
         var name = "no-lag-scroll",
